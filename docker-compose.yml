@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+    jupyter-cling:
+        build: .
+        image: liudonghua123/jupyter-cling:latest
+        ports:
+            - "8888:8888"
+        volumes:
+            - ./work:/work
+        restart: always
